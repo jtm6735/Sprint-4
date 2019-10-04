@@ -25,15 +25,23 @@ body {
   padding: 5%;
   width: 60%;
   left: 80px;
-  margin: 15px;
+  margin: 20px;
+  margin-left: 50px;
   border-radius: 20px;
 }
 
+
+/* Note: The left and top position were done
+    assuming if displayed on a 1440x900 screen
+    may need to be change
+*/
 #iconKeys {
   border: 3px solid white;
   border-radius: 20px;
-  position: relative;
-  height: 50px;
-  width: 50px;
-  left: 75%;
+  position: absolute;
+  height: 54px;
+  width: 60px;
+  font-size: 35px;
+  text-align: center;
+  color: white;
 }
