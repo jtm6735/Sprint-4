@@ -1,0 +1,34 @@
+body {
+  background: #eeeeee;
+  font-family: "Tahoma", "Verdana", sans-serif;
+  background-image: url("media/deepSeaBG.png");
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+#canvasContent {
+  /* Use hidden for having the canvas layout disappear
+    Left in the solid for testing*/
+  border: 3px solid black;
+  width: auto;
+  height: 550px;
+}
+
+#title {
+  color: white;
+  text-align: center;
+}
+
+#displayIcons {
+  border: 3px solid white;
+  padding: 5%;
+  width: 60%;
+  left: 80px;
+  margin: 15px;
+  border-radius: 20px
+}
+
+#iconKeys {
+  
+}
