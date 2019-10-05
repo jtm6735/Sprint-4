@@ -1,6 +1,6 @@
 body {
   background: #eeeeee;
-  font-family: "Tahoma", "Verdana", sans-serif;
+  font-family: 'Tahoma', 'Verdana', sans-serif;
   background-image: url("media/deepSeaBG.png");
   display: block;
   width: auto;
@@ -19,6 +19,7 @@ body {
   color: white;
   text-align: center;
   margin-top: 60px;
+  font-family: 'Rubik', sans-serif;
 }
 
 #displayIcons {
@@ -31,6 +32,18 @@ body {
   border-radius: 20px;
 }
 
+#displayEndIcons {
+  border: 3px solid white;
+  padding: 5%;
+  width: 40%;
+  left: -260px;
+  height: auto;
+  margin: 20px;
+  margin-left: 50px;
+  border-radius: 20px;
+  transform: rotate(90deg);
+  position: relative;
+}
 
 /* Note: The left and top position were done
     assuming if displayed on a 1440x900 screen
@@ -95,4 +108,21 @@ body {
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
+}
+
+/* End game stuff */
+#foundAll {
+  font-size: 72px;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 20%;
+}
+
+#learnMore {
+  font-size: 48px;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 20%;
 }
