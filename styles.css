@@ -25,12 +25,14 @@ body {
 
 #displayIcons {
   border: 3px solid white;
-  padding: 5.5%;
+  padding-left: 2.5%;
   width: 60%;
   left: 80px;
   margin: 20px;
   margin-left: 15%;
   border-radius: 20px;
+  height: 90px;
+  padding-top: 20px;
 }
 
 #displayEndIcons {
