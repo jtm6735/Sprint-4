@@ -7,11 +7,10 @@ let mouseY;
 let backGroundImage = new Image();
 let imageData;
 let delta = 0;
+let canvasObject = document.getElementById("canvasContent")
 let lastFrameTimeMS = 0;
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
-const screenWidth = 800;
-const screenHeight = 700;
 const keyboard = Object.freeze({
     LEFT:   37,
     UP:     38,
@@ -23,17 +22,18 @@ const keys = [];
 
 
 function init(argImageData){
-    //backGroundImage.src
+    backGroundImage.src = "media/deepSeaBG.png";
     imageData = argImageData;
-    
-    player = createPlayerSprite(400,350,50,50,"face.png",.3);
+    canvas.width = canvasObject.offsetWidth;
+    canvas.height = canvasObject.offsetHeight;
+    player = createPlayerSprite(400,350,60,60,"media/angler-fish.png",.3);
 
     loop();
 }
 
-/*
-    Functions go below here
-*/
+
+   /* Functions go below here*/
+
 
 function loop(timestamp){
     requestAnimationFrame(loop);
@@ -44,10 +44,10 @@ function loop(timestamp){
 
 function drawHUD(ctx){
 
-    /*
+    ctx.drawImage(backGroundImage,0,0);
     getMousePos();
     callDrawPlayer();
-    */
+    /*
     // Partial controls for arrow keys
 // Up and down arrow keys
 if(keys[keyboard.DOWN]){
@@ -115,7 +115,9 @@ window.onkeydown = (e) =>{
     var char = String.fromCharCode(e.keyCode);
     keys[e.keyCode] = true;
 }
-/*
+*/
+
+
 function getMousePos(){
     canvas.addEventListener('mousemove', function(m){
         mouseX = m.x;
@@ -124,8 +126,8 @@ function getMousePos(){
 }
 
 function callDrawPlayer(){
-    player.x = mouseX;
-    player.y = mouseY;
+    player.x = mouseX - 32;
+    player.y = mouseY - 130;
     player.draw(ctx);
 }
-*/
+}

@@ -26,6 +26,15 @@ class PlayerSprite{
     }
 }
 
+class seaThings{
+    constructor(x,y,width,height,image){
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+    }
+}
+
 function createPlayerSprite(x,y,width,height,url){
     let image = new Image();
     image.src = url;
