@@ -25,11 +25,11 @@ body {
 
 #displayIcons {
   border: 3px solid white;
-  padding: 5%;
+  padding: 5.5%;
   width: 60%;
   left: 80px;
   margin: 20px;
-  margin-left: 50px;
+  margin-left: 15%;
   border-radius: 20px;
 }
 
@@ -68,19 +68,9 @@ img {
   visibility: visible;
 }
 
-/* Note: The left and top position were done
-    assuming if displayed on a 1440x900 screen
-    may need to be change
-*/
-#iconKeys {
-  border: 3px solid white;
-  border-radius: 20px;
-  position: absolute;
-  height: 54px;
-  width: 60px;
-  font-size: 35px;
-  text-align: center;
-  color: white;
+.greyItems {
+  float: left;
+  position: relative;
 }
 
 /* Popup container - can be anything you want */
