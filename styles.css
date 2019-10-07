@@ -35,17 +35,37 @@ body {
 
 #displayEndIcons {
   border: 3px solid white;
-  padding: 5%;
-  width: 40%;
-  left: -260px;
-  height: auto;
-  margin: 20px;
-  margin-left: 50px;
+  padding: 3%;
+  width: 10%;
+  top: -500px;
+  height: 600px;
+  margin: 10px;
+  margin-left: 270px;
   border-radius: 20px;
-  transform: rotate(90deg);
   position: relative;
-  overflow: scroll;
+  overflow: auto;
   color: white;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  visibility: visible
+  
+}
+
+.borderColor {
+  border: 3px solid white;
+  width: 130%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  visibility: hidden;
+}
+
+.borderColor:hover {
+  visibility: visible;
 }
 
 /* Note: The left and top position were done
