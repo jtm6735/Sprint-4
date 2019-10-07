@@ -44,6 +44,8 @@ body {
   border-radius: 20px;
   transform: rotate(90deg);
   position: relative;
+  overflow: scroll;
+  color: white;
 }
 
 /* Note: The left and top position were done
