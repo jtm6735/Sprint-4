@@ -1,23 +1,16 @@
 "use strict";
-export{createPlayerSprite, createObject};
+export{createSprite, createObject};
 
-class PlayerSprite{
-    constructor(x,y,width,height,image,speed){
+class sprite{
+    constructor(x,y,width,height,image,dest){
         this.x = x;
         this.y = y;
         this.width = width;
         this.height = height;
         this.image = image;
-        
-        this.speed = speed;
-        this.dx = 0;
-        this.dy = 0;
+        this.boolValue = dest;
     }
     
-    update(dt){
-        this.x += this.dx * dt;
-        this.y += this.dy * dt;
-    }
     
     draw(ctx){
         ctx.save();
@@ -32,13 +25,20 @@ class seaThings{
         this.y = y;
         this.width = width;
         this.height = height;
+        this.image = image;
+    }
+    
+    seaDraw(ctx){
+        ctx.save();
+        ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
+        ctx.restore();
     }
 }
 
-function createPlayerSprite(x,y,width,height,url){
+function createSprite(x,y,width,height,url,bool){
     let image = new Image();
     image.src = url;
-    let playerChar = new PlayerSprite(x,y,width,height,image);
+    let playerChar = new sprite(x,y,width,height,image,bool);
     return playerChar;
 }
 
