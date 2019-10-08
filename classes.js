@@ -1,5 +1,5 @@
 "use strict";
-export{createPlayerSprite};
+export{createPlayerSprite, createObject};
 
 class PlayerSprite{
     constructor(x,y,width,height,image,speed){
@@ -40,4 +40,11 @@ function createPlayerSprite(x,y,width,height,url){
     image.src = url;
     let playerChar = new PlayerSprite(x,y,width,height,image);
     return playerChar;
+}
+
+function createObject(x,y,width,height,url){
+    let image = new Image();
+    image.src = url;
+    let object = new seaThings(x,y,width,height,url);
+    return object;
 }
