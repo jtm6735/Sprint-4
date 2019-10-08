@@ -118,6 +118,16 @@ body {
   color: white;
 }
 
+.text {
+  color: white;
+  margin-left: 260px;
+  display: none;
+}
+
+.text:nth-child(n) {
+  display: block;
+}
+
 img {
   display: block;
   margin-left: auto;
@@ -200,6 +210,7 @@ img {
   color: white;
   text-align: center;
   margin-top: 20%;
+  display: block;
 }
 
 #learnMore {
@@ -208,4 +219,6 @@ img {
   color: white;
   text-align: center;
   margin-top: 20%;
+  margin-left: 200px;
+  display: block;
 }
